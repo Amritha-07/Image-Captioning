@@ -14,7 +14,8 @@ model.to(device)
 
 max_length = 16
 num_beams = 4
-gen_kwargs = {"max_length": max_length, "num_beams": num_beams}
+num_return_sequences = 4
+gen_kwargs = {"max_length": max_length, "num_beams": num_beams, "num_return_sequences": num_return_sequences}
 def predict_step(image_paths):
   images = []
   for image_path in image_paths:
@@ -36,9 +37,6 @@ st.write("This is a simple app that generates captions for images using a deep l
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png"])
 
 if uploaded_file is not None:
-  image = Image.open(uploaded_file)
-  st.image(image, caption="Uploaded Image", use_column_width=True)
   st.write("Generating caption...")
-  im1 = image.save("image.jpg")
   caption = predict_step(["image.jpg"])
   st.markdown(f"**Caption:** {caption}")
