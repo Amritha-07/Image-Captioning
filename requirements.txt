@@ -1,0 +1,6 @@
+transformers==4.28.0
+torch
+pillow
+treamlit
+io
+import-ipynb
