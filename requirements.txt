@@ -1,6 +1,6 @@
 transformers==4.28.0
 torch
 pillow
-treamlit
+streamlit
 io
 import-ipynb
