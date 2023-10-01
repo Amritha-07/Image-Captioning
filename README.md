@@ -4,6 +4,10 @@ A Web Application for Generating Captions for Images
 
 This project carries out Image Captioning with the help of hugging face model and implemented it in streamlit
 
+<center>
+    <img src='img/snap_1.png' alt='image' width='90%' name='snap_1'/>
+</center>
+
 ## Tech-Stack
 
 - Python
