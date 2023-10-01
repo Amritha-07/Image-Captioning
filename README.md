@@ -17,10 +17,10 @@ This project carries out Image Captioning with the help of hugging face model an
 
 To install and run this project, you need to have Python 3 installed on your computer. You also need to install and import the following Python libraries:
 
-streamlit
-transformers
-PIL
-requests
+- streamlit
+- transformers
+- PIL
+- requests
 
 You can use any IDE or editor of your choice.
 
